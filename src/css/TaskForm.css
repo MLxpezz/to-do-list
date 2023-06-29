@@ -56,31 +56,6 @@
     background-color: #aca8a8;
 }
 
-@media screen and (max-width: 414px){
-
-    .form-container {
-        width: 100vw;
-        padding: 20px;
-        flex-wrap: nowrap;
-    }
-    
-    .form-container__input-container {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .form-container__TaskName {
-        font-size: 20px;
-        width: 100%;
-        padding: 2px;
-    }
-
-    .form-container__addTask-btn {
-        padding: 5px;
-    }
-}
 
 @media screen and (max-width: 912px){
 
@@ -120,5 +95,50 @@
         border-radius: 25px;
         border: 1px solid #ccc;
         font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 414px){
+
+    .form-container {
+        width: 100vw;
+        padding: 20px;
+        flex-wrap: nowrap;
+    }
+    
+    .form-container__input-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .form-container__TaskName {
+        font-size: 18px;
+        width: 100%;
+        padding: 2px;
+    }
+
+    .form-container__addTask-btn {
+        padding: 1px;
+    }
+
+    .form-container__taskInfo button {
+        padding: 5px;
+        border-radius: 25px;
+        border: 1px solid #ccc;
+        font-size: 18px;
+    }
+
+    .form-container__taskInfo {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .form-container__addTask-btn {
+        padding: 1px;
+        height: 30px;
+        width: 180px;
+        font-size: 18px;
     }
 }

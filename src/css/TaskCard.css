@@ -84,3 +84,25 @@
         width: 50px;
     }
 }
+
+@media screen and (max-width: 414px) {
+    .Task-container .Task {
+        height: 50px;
+        width: 100%;
+        font-size: 18px;
+        gap: 25px;
+    }
+
+    .Task-container .Task .Task__btns-container {
+        width: 100px;
+    }
+
+    .Task-container .Task .Task__btns-container button {
+        width: 100px;
+        height: 40px;
+    }
+
+    .Task-container .Task .Task__btns-container img{
+        width: 30px;
+    }
+}

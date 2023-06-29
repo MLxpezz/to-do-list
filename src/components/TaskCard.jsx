@@ -22,8 +22,8 @@ const TaskCard = () => {
                   <img
                     src={`${
                       !task.done
-                        ? "../assets/done.svg"
-                        : "../assets/close.svg"
+                        ? "/src/assets/done.svg"
+                        : "/src/assets/close.svg"
                     }`}
                     alt="done"
                   />
@@ -34,7 +34,7 @@ const TaskCard = () => {
                     deleteTask(task.id);
                   }}
                 >
-                  <img src="../assets/delete.svg" alt="delete" />
+                  <img src="/src/assets/delete.svg" alt="delete" />
                 </button>
               </div>
             </div>
