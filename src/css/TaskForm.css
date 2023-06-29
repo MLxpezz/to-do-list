@@ -1,0 +1,124 @@
+.form-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 25px;
+    width: 80%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.form-container__TaskName {
+    width: 200px;
+    height: auto;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    font-size: 15px;
+}
+
+.form-container__TaskName::placeholder {
+    color: #ccc;
+}
+
+.form-container__addTask-btn {
+    width: 150px;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid #ccc;
+    height: auto;
+    font-size: 15px;
+}
+
+.form-container__addTask-btn:hover {
+    cursor: pointer;
+    background-color: #aca8a8;
+}
+
+.form-container__taskInfo {
+    font-size: 19px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-container__taskInfo button {
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+.form-container__taskInfo button:hover {
+    cursor: pointer;
+    background-color: #aca8a8;
+}
+
+@media screen and (max-width: 414px){
+
+    .form-container {
+        width: 100vw;
+        padding: 20px;
+        flex-wrap: nowrap;
+    }
+    
+    .form-container__input-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .form-container__TaskName {
+        font-size: 20px;
+        width: 100%;
+        padding: 2px;
+    }
+
+    .form-container__addTask-btn {
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 912px){
+
+    .form-container {
+        width: 100vw;
+        padding: 20px;
+        flex-wrap: nowrap;
+    }
+
+    .form-container .form-container__input-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .form-container__TaskName {
+        font-size: 30px;
+        width: 500px;
+        padding: 2px;
+    }
+
+    .form-container__addTask-btn {
+        padding: 5px;
+        height: 80px;
+        width: 200px;
+        font-size: 25px;
+    }
+
+    .form-container__taskInfo {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .form-container__taskInfo button {
+        padding: 15px;
+        border-radius: 25px;
+        border: 1px solid #ccc;
+        font-size: 30px;
+    }
+}
