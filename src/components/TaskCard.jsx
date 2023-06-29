@@ -1,4 +1,7 @@
 import "../css/TaskCard.css";
+import done from '../assets/done.svg';
+import close from '../assets/close.svg';
+import del from '../assets/delete.svg';
 import { useContext } from "react";
 import { context } from "../context/TaskContext";
 
@@ -22,8 +25,8 @@ const TaskCard = () => {
                   <img
                     src={`${
                       !task.done
-                        ? "../assets/done.svg"
-                        : "../assets/close.svg"
+                        ? done
+                        : close
                     }`}
                     alt="done"
                   />
@@ -34,7 +37,7 @@ const TaskCard = () => {
                     deleteTask(task.id);
                   }}
                 >
-                  <img src="../assets/delete.svg" alt="delete" />
+                  <img src={del} alt="delete" />
                 </button>
               </div>
             </div>
